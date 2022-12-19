@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.parent {
+  background-color: #23424a;
+  padding: 50px;
+
+  margin: 0 auto;
+  width: 80%;
+
+  font-size: 20px;
+}
+
+.child {
+  /*font-size: 16px;*/ /*if we don't set font-size here, it will inherit the font-size of it's parent, so here 20px*/ /*but if we set font-size here, then 1em = the font-size value we set here*/
+  background-color: #38cfd9;
+
+  width: 100%;
+
+  padding: 5em; /*1em = 20px*/
+}

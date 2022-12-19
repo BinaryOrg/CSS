@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 30px;
+}
+
+.parent {
+  background-color: #23424a;
+  padding: 50px;
+
+  margin: 0 auto;
+  width: 80%;
+
+  /*font-size: 20px;*/
+}
+
+.child {
+  /*font-size: 16px;*/ /*if we don't set font-size here, it will inherit the font-size of it's parent, so here 30px*/ /*but if we set font-size here, then 1em = the font-size value we set here*/
+  background-color: #38cfd9;
+
+  width: 100%;
+
+  padding: 5em; /*1em = 30px*/ /*inherited font-size value of the parent body element in this case, as we haven't set any value to the parent class*/
+}
